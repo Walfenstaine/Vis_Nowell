@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4288ef0983c52140926e85ffdd55798, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  soundOn: 0
+  soundOn: 1
   level: Scene1
   language: ru
-  IsSaved: 0
+  IsSaved: 1
