@@ -22,12 +22,12 @@ public class Variator : MonoBehaviour
     }
     void Resive() 
     {
-        for (int i = 0; i < game.replic.nodes[game.num].number_vet.Length; i++) 
+        for (int i = 0; i < game.replic.nodes[game.num].questions.Length; i++) 
         {
             GameObject g = Instantiate(buton);
             g.transform.SetParent(transform);
-            g.GetComponent<QuestFild>().numReplik = game.replic.nodes[game.num].number_vet[i];
-            g.GetComponent<QuestFild>().rep = game.replic.nodes[game.num].quest[i];
+            g.GetComponent<QuestFild>().numReplik = game.replic.nodes[game.num].questions[i].number_vet;
+            g.GetComponent<QuestFild>().rep = game.replic.nodes[game.num].questions[i].quest;
         }
         masage.text = game.replic.nodes[game.num].masage;
     }
